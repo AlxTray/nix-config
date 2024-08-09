@@ -1,0 +1,15 @@
+[pyprland]
+plugins = [ "scratchpads" ]
+
+[scratchpads.yazi]
+command = "kitty --class yazi-scratchpad yazi"
+class = "yazi-scratchpad"
+size = "35% 30%"
+animation = "fromBottom"
+
+[scratchpads.ncspot]
+command = "kitty --class ncspot-scratchpad ncspot"
+class = "ncspot-scratchpad"
+size = "30% 20%"
+animation = "fromBottom"
+lazy = true
