@@ -23,12 +23,9 @@ in
 pkgs.writeShellScriptBin "wallpaperRandomiser" ''
   wallpapers=${wallpaperBashArray}
   monitor=(`hyprctl monitors | grep Monitor | awk '{print $2}'`)
-  hyprctl hyprpaper unload all
-  
   for m in ''${monitor[@]}; do
     rand=$[$RANDOM % ''${#wallpapers[@]}]
     wallpaper=''${wallpapers[$rand]}
-    hyprctl hyprpaper preload $wallpaper
-    hyprctl hyprpaper wallpaper "$m,$wallpaper"
+    swww img -o $m $wallpaper
   done
 ''
