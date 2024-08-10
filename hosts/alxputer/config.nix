@@ -10,6 +10,7 @@
   javaModule.enable = true;
   steamModule.enable = true;
   thunarModule.enable = true;
+  libvirtModule.enable = true;
 
   system.stateVersion = "23.11";
 }

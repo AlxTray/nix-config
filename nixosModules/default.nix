@@ -16,6 +16,7 @@
     ./boot
     ./drivers
     ./security
+    ./virt
   ];
 
   bluetoothModule.enable =

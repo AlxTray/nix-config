@@ -6,12 +6,7 @@
       homeMode = "755";
       isNormalUser = true;
       description = "AlxTray";
-      extraGroups = [
-        "networkmanager"
-        "wheel"
-        "scanner"
-        "lp"
-      ];
+      extraGroups = [ "wheel" ];
       shell = pkgs.zsh;
       ignoreShellProgramCheck = true;
     };

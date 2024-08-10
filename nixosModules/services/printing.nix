@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ username, lib, config, ... }:
 
 {
   options = {
@@ -8,5 +8,6 @@
 
   config = lib.mkIf config.printingModule.enable {
     services.printing.enable = true;
+    users.users."${username}".extraGroups = [ "lp" ];
   };
 }
