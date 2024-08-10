@@ -9,6 +9,7 @@
   config = lib.mkIf config.walkerModule.enable {
     programs.walker = {
       enable = true;
+      runAsService = true;
       config = {    
         list = {
           max_entries = 50;
