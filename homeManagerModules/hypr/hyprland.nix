@@ -7,7 +7,6 @@
   };
 
   config = lib.mkIf config.hyprlandModule.enable {
-    stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
       enable = true;
       xwayland.enable = true;
