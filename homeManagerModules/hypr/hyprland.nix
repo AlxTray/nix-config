@@ -7,6 +7,7 @@
   };
 
   config = lib.mkIf config.hyprlandModule.enable {
+    stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
       enable = true;
       xwayland.enable = true;
@@ -34,6 +35,7 @@
             env = MOZ_ENABLE_WAYLAND,1
 
             exec-once = wallpaperRandomiser
+            exec-once = walkerLaunch
             exec-once = pypr
             exec-once = waybar
             exec-once = nm-applet --indicator

@@ -11,7 +11,7 @@
 
     pyprland.url = "github:hyprland-community/pyprland";
     walker.url = "github:abenz1267/walker";
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:trueNAHO/stylix/hyprland-add-hyprpaper-enable-option";
     yazi.url = "github:sxyazi/yazi";
     helix.url = "github:helix-editor/helix";
   };

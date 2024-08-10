@@ -10,6 +10,7 @@
     home.packages = [
       (import ../scripts/screenshot.nix { inherit pkgs; })
       (import ../scripts/wallpaperRandomiser.nix { inherit pkgs lib; })
+      (import ../scripts/walkerLaunch.nix { inherit pkgs; })    
     ];
   };
 }
