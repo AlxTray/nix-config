@@ -1,12 +1,16 @@
-{ pkgs, lib, config, ... }:
+{ inputs, pkgs, lib, config, ... }:
 
 {
+  imports = [
+    inputs.stylix.nixosModules.stylix
+  ];
+
   options = {
-    stylixSystemModule.enable =
-      lib.mkEnableOption "enables stylixSystemModule";
+    stylixModule.enable =
+      lib.mkEnableOption "enables stylixModule";
   };
 
-  config = lib.mkIf config.stylixSystemModule.enable {
+  config = lib.mkIf config.stylixModule.enable {
     stylix = {
       enable = true;
       image = config.lib.stylix.pixel "base00";

@@ -1,6 +1,10 @@
-{ lib, config, ... }:
+{ inputs, lib, config, ... }:
 
 {
+  imports = [
+    inputs.walker.homeManagerModules.default  
+  ];
+
   options = {
     walkerModule.enable =
       lib.mkEnableOption "enables walkerModule";

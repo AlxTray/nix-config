@@ -33,8 +33,6 @@
           modules = [
             ./hosts/${host}/config.nix
             ./nixosModules
-            
-            inputs.stylix.nixosModules.stylix
 
             home-manager.nixosModules.home-manager
             { 
@@ -50,8 +48,6 @@
                 imports = [ 
                   ./hosts/${host}/home.nix
                   ./homeManagerModules
-                  
-                  inputs.walker.homeManagerModules.default
                 ];
               };
             }

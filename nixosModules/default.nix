@@ -31,6 +31,6 @@
     lib.mkDefault true;
   portalsModule.enable =
     lib.mkDefault true;
-  stylixSystemModule.enable =
+  stylixModule.enable =
     lib.mkDefault true;
 }
