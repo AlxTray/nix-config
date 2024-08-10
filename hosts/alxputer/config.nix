@@ -11,6 +11,7 @@
   steamModule.enable = true;
   thunarModule.enable = true;
   libvirtModule.enable = true;
+  dockerModule.enable = true;
 
   system.stateVersion = "23.11";
 }
