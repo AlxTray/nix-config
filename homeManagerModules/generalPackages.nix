@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, config, ... }:
+{ pkgs, lib, config, ... }:
 
 {
   options = {
@@ -8,11 +8,6 @@
 
   config = lib.mkIf config.homePackagesModule.enable {
     home.packages = with pkgs; [
-      (import ../scripts/screenshootin.nix { inherit pkgs; })
-      (import ../scripts/wallpaperRandomiser.nix { inherit pkgs lib; })
-
-      inputs.pyprland.packages.${pkgs.system}.pyprland
-
       networkmanagerapplet
       hyprpicker
       swappy

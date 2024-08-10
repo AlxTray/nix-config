@@ -108,7 +108,7 @@
             bind = ${modifier},Return,exec,kitty
             bind = ${modifier},R,exec,walker
             bind = ${modifier},B,exec,firefox
-            bind = ${modifier},S,exec,screenshootin
+            bind = ${modifier},S,exec,screenshot
             bind = ${modifier}SHIFT,P,exec,wlogout
             bind = ${modifier},T,exec,thunar
 
