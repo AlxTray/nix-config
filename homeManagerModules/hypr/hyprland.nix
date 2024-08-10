@@ -7,6 +7,7 @@
   };
 
   config = lib.mkIf config.hyprlandModule.enable {
+    stylix.targets.hyprpaper.enable = false;
     stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
       enable = true;
@@ -34,7 +35,7 @@
             env = SDL_VIDEODRIVER,wayland
             env = MOZ_ENABLE_WAYLAND,1
 
-            exec-once = swww-daemon
+            exec-once = hyprpaper
             exec-once = wallpaperRandomiser
             exec-once = walker -n
             exec-once = pypr
