@@ -13,8 +13,7 @@
     walker.url = "github:abenz1267/walker";
     stylix.url = "github:trueNAHO/stylix/hyprland-add-hyprpaper-enable-option";
     yazi.url = "github:sxyazi/yazi";
-    helix.url = "github:helix-editor/helix";
-    nixvim.url = "github:dc-tec/nixvim";
+    alxvim.url = "github:AlxTray/alxvim";
   };
 
   outputs =

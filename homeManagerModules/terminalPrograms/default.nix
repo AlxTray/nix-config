@@ -9,7 +9,6 @@
     ./fzf.nix
     ./gh.nix
     ./git.nix
-    ./helix.nix
     ./lazygit.nix
     ./ncspot.nix
     ./yazi.nix
@@ -31,8 +30,6 @@
   ghModule.enable =
     lib.mkDefault true;
   gitModule.enable =
-    lib.mkDefault true;
-  helixModule.enable =
     lib.mkDefault true;
   lazygitModule.enable =
     lib.mkDefault true;
