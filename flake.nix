@@ -14,7 +14,6 @@
     stylix.url = "github:trueNAHO/stylix/hyprland-add-hyprpaper-enable-option";
     yazi.url = "github:sxyazi/yazi";
     helix.url = "github:helix-editor/helix";
-    swww.url = "github:LGFae/swww";
   };
 
   outputs =

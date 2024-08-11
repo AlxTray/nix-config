@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ inputs, pkgs, lib, config, ... }:
 
 {
   options = {
@@ -20,6 +20,11 @@
         window_padding_width = 4;
         confirm_os_window_close = 0;
       };
+    };
+
+    programs.wezterm = {
+      enable = true;
+      enableZshIntegration = true;
     };
   };
 }

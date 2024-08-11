@@ -9,7 +9,6 @@
   config = lib.mkIf config.flakePackagesModule.enable {
     home.packages = [
       inputs.pyprland.packages.${pkgs.system}.pyprland
-      inputs.swww.packages.${pkgs.system}.swww
     ];
   };
 }
