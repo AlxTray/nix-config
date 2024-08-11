@@ -2,7 +2,7 @@
 
 {
   imports = [
-    inputs.walker.homeManagerModules.default  
+    inputs.walker.homeManagerModules.default
   ];
 
   options = {
@@ -14,7 +14,7 @@
     programs.walker = {
       enable = true;
       runAsService = true;
-      config = {    
+      config = {
         list = {
           max_entries = 50;
           show_initial_entries = true;
@@ -159,11 +159,13 @@
 
           #window {
             background: none;
-            color: #dcd7ba;
+            border-radius: 10px;
+            color: #${config.stylix.base16Scheme.base07};
           }
 
           #box {
-            background: #16161d;
+            border-radius: 10px;
+            background: #${config.stylix.base16Scheme.base00};
           }
 
           #search {
@@ -196,7 +198,7 @@
           }
 
           #list {
-            background: #16161d;
+            background: #${config.stylix.base16Scheme.base00};
           }
 
           child {
@@ -206,7 +208,7 @@
           child:selected,
           child:hover {
             box-shadow: none;
-            background: #1f1f28;
+            background: #131617;
           }
 
           #item {
@@ -243,6 +245,6 @@
           }
         '';
       };
-    };  
+    };
   };
 }
