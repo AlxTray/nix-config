@@ -16,7 +16,7 @@
         opener = {
           edit = [
             {
-              run = "kitty -e hx $@";
+              run = "kitty -e nvim $@";
               desc = "Helix";
               orphan = true;
             }
