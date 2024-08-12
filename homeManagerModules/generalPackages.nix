@@ -9,7 +9,6 @@
   config = lib.mkIf config.homePackagesModule.enable {
     home.packages = with pkgs; [
       networkmanagerapplet
-      hyprpaper
       hyprpicker
       swappy
       vesktop

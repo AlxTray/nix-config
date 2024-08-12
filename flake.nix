@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -13,6 +13,7 @@
     walker.url = "github:abenz1267/walker";
     stylix.url = "github:trueNAHO/stylix/hyprland-add-hyprpaper-enable-option";
     yazi.url = "github:sxyazi/yazi";
+    swww.url = "github:LGFae/swww";
     alxvim.url = "github:AlxTray/alxvim";
   };
 
@@ -34,7 +35,7 @@
             ./nixosModules
 
             home-manager.nixosModules.home-manager
-            { 
+            {
               home-manager.extraSpecialArgs = {
                 inherit system inputs username host;
               };
@@ -44,7 +45,7 @@
               home-manager.backupFileExtension = "backup";
 
               home-manager.users."${username}" = {
-                imports = [ 
+                imports = [
                   ./hosts/${host}/home.nix
                   ./homeManagerModules
                 ];

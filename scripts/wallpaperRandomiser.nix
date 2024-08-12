@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 
-let    
+let
   wallpapersRepo = pkgs.fetchFromGitHub {
     owner = "AngelJumbo";
     repo = "gruvbox-wallpapers";
@@ -26,8 +26,6 @@ pkgs.writeShellScriptBin "wallpaperRandomiser" ''
   for m in ''${monitor[@]}; do
     rand=$[$RANDOM % ''${#wallpapers[@]}]
     wallpaper=''${wallpapers[$rand]}
-    hyprctl hyprpaper preload $wallpaper
-    hyprctl hyprpaper wallpaper "$m,$wallpaper"
+    swww img -o $m $wallpaper
   done
-  hyprctl hyprpaper unload all
 ''
