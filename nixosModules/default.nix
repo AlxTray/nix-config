@@ -6,6 +6,7 @@
     ./extraFonts.nix
     ./locale.nix
     ./generalPackages.nix
+    ./hyprland.nix
     ./networking.nix
     ./portals.nix
     ./stylix.nix
@@ -26,6 +27,8 @@
   localeModule.enable =
     lib.mkDefault true;
   systemPackagesModule.enable =
+    lib.mkDefault true;
+  hyprlandSystemModule.enable =
     lib.mkDefault true;
   networkingModule.enable =
     lib.mkDefault true;

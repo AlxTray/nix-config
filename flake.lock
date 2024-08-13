@@ -1070,11 +1070,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1723528216,
-        "narHash": "sha256-HGB36UZ8vzDtvS3ts9rP4luxRkHUpBD0LZlADlZVcUE=",
+        "lastModified": 1723554697,
+        "narHash": "sha256-Bv01ff26rdkjyfv3WVSZeWK9xzUVS9PTUtTbj440Uco=",
         "owner": "abenz1267",
         "repo": "walker",
-        "rev": "f4bdc825ed95c55a8bb291cb6a8b4a7bcb33d2d2",
+        "rev": "079125b59169ce95483808bac3a8b7a274a167c4",
         "type": "github"
       },
       "original": {

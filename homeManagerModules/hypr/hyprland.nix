@@ -1,5 +1,11 @@
-{ lib, config, ... }:
+{ pkgs, lib, config, ... }:
 
+let
+  swwwStartScript = pkgs.writeShellScriptBin "swwwStartScript" ''
+    swww-daemon &
+    wallpaperRandomiser &
+  '';
+in
 {
   options = {
     hyprlandModule.enable =
@@ -11,11 +17,6 @@
     stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
       enable = true;
-      xwayland.enable = true;
-      systemd = {
-        enable = true;
-        variables = [ "--all" ];
-      };
       extraConfig =
         let
           modifier = "SUPER";
@@ -35,7 +36,7 @@
                       env = SDL_VIDEODRIVER,wayland
                       env = MOZ_ENABLE_WAYLAND,1
                       
-                      exec-once = swww-daemon
+                      exec-once = "${swwwStartScript}/bin/swwwStartScript"
                       exec-once = walker -n
                       exec-once = pypr
                       exec-once = waybar
