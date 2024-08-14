@@ -15,6 +15,9 @@
       enableExtensionUpdateCheck = false;
       extensions = with pkgs.vscode-extensions; [
         jdinhlife.gruvbox
+        jnoortheen.nix-ide
+        mkhl.direnv
+        arrterian.nix-env-selector
         vscjava.vscode-java-pack
         visualstudioexptteam.vscodeintellicode
         redhat.java
@@ -25,17 +28,20 @@
         vscjava.vscode-gradle
         mathiasfrohlich.kotlin
         ms-python.python
-        ms-vscode.cpptools-extension-pack
+        ms-vscode.cpptools
         yzhang.markdown-all-in-one
         esbenp.prettier-vscode
         christian-kohler.path-intellisense
         ban.spellright
         aaron-bond.better-comments
+        eamodio.gitlens
       ];
       userSettings = {
         "editor.fontFamily" = "FiraCode";
+        "editor.fontLigatures" = true;
         "workbench.colorTheme" = "Gruvbox Dark Hard";
         "window.titleBarStyle" = "custom";
+        "redhat.telemetry.enabled" = false;
       };
     };
   };
