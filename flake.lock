@@ -817,11 +817,11 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1722105261,
-        "narHash": "sha256-i2aKbLtJ5WvVkfu8k7g0m90PJgfTJFvTdXtlKes+KKU=",
+        "lastModified": 1723622426,
+        "narHash": "sha256-3F0iBk5igmillP4/Bno1UTO8XeWmnvDFnxS0GGwbMz0=",
         "owner": "hyprland-community",
         "repo": "pyprland",
-        "rev": "885dbde0cb16a05f35aa7c3c550716f9f39e5802",
+        "rev": "4969401714433210ecaa679ac92215574410dabe",
         "type": "github"
       },
       "original": {
@@ -1070,11 +1070,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1723554697,
-        "narHash": "sha256-Bv01ff26rdkjyfv3WVSZeWK9xzUVS9PTUtTbj440Uco=",
+        "lastModified": 1723618707,
+        "narHash": "sha256-sIzrl7gxeWCVcuulrjQLXK9i2PRg6sYI0lJeqjoTwIU=",
         "owner": "abenz1267",
         "repo": "walker",
-        "rev": "079125b59169ce95483808bac3a8b7a274a167c4",
+        "rev": "73decc2e93078a582818a34617d7ea8708ef8d80",
         "type": "github"
       },
       "original": {
@@ -1090,11 +1090,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1723467825,
-        "narHash": "sha256-rY3QW5hc4zCuIHfpUZKsExxysDzjDr78rjjjDwvVk28=",
+        "lastModified": 1723622907,
+        "narHash": "sha256-Bfk+8TEwIpnIaTBh3ts1MyqpOe7K3RaVcUt4bA3yTCI=",
         "owner": "sxyazi",
         "repo": "yazi",
-        "rev": "71d6b0d9f2c49ba093b59668ebb1b6fa78afb56b",
+        "rev": "c75960eae632a69686a6db38d4d7214625ecf254",
         "type": "github"
       },
       "original": {
