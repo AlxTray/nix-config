@@ -29,12 +29,16 @@
         mathiasfrohlich.kotlin
         ms-python.python
         ms-vscode.cpptools
+        ms-dotnettools.csdevkit
+        ms-dotnettools.vscodeintellicode-csharp
         yzhang.markdown-all-in-one
         esbenp.prettier-vscode
         christian-kohler.path-intellisense
         ban.spellright
         aaron-bond.better-comments
         eamodio.gitlens
+        visualstudioexptteam.intellicode-api-usage-examples
+        editorconfig.editorconfig
       ];
       userSettings = {
         "editor.fontFamily" = "FiraCode";
@@ -42,6 +46,7 @@
         "workbench.colorTheme" = "Gruvbox Dark Hard";
         "window.titleBarStyle" = "custom";
         "redhat.telemetry.enabled" = false;
+        "extensions.autoUpdate" = false;
       };
     };
   };
