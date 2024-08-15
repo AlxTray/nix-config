@@ -30,7 +30,9 @@
         ms-python.python
         ms-vscode.cpptools
         ms-dotnettools.csdevkit
+        ms-dotnettools.csharp
         ms-dotnettools.vscodeintellicode-csharp
+        ms-dotnettools.vscode-dotnet-runtime
         yzhang.markdown-all-in-one
         esbenp.prettier-vscode
         christian-kohler.path-intellisense

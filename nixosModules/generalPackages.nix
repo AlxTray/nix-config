@@ -16,6 +16,7 @@
       ripgrep
       inxi
       nh
+      nix-tree
     ];
   };
 }
