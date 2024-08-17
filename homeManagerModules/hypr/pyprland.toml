@@ -4,7 +4,7 @@ plugins = [ "scratchpads" ]
 [scratchpads.yazi]
 command = "kitty --class yazi-scratchpad yazi"
 class = "yazi-scratchpad"
-size = "35% 30%"
+size = "40% 35%"
 animation = "fromBottom"
 
 [scratchpads.ncspot]

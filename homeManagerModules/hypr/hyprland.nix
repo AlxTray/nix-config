@@ -17,6 +17,7 @@ in
     stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
       enable = true;
+      systemd.variables = [ "--all" ];
       extraConfig =
         let
           modifier = "SUPER";

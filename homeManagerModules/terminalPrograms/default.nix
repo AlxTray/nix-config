@@ -11,10 +11,11 @@
     ./git.nix
     ./lazygit.nix
     ./ncspot.nix
+    ./taskwarrior.nix
     ./yazi.nix
     ./zoxide.nix
 
-    ./fastfetch   
+    ./fastfetch
   ];
 
   batModule.enable =
@@ -34,6 +35,8 @@
   lazygitModule.enable =
     lib.mkDefault true;
   ncspotModule.enable =
+    lib.mkDefault true;
+  taskwarriorModule.enable =
     lib.mkDefault true;
   yaziModule.enable =
     lib.mkDefault true;
