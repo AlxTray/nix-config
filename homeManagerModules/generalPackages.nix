@@ -18,7 +18,6 @@
       grim
       slurp
       playerctl
-      modrinth-app
       libreoffice-fresh
       hunspell
       hunspellDicts.en_GB-large
