@@ -24,6 +24,7 @@
       cool-retro-term
       yt-dlp
       ani-cli
+      modrinth-app
     ];
   };
 }
