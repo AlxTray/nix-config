@@ -1,5 +1,5 @@
 { pkgs, ... }:
 
-pkgs.writeShellScriptBin "screenshootin" ''
+pkgs.writeShellScriptBin "screenshot" ''
   grim -g "$(slurp)" - | swappy -f -
 ''
