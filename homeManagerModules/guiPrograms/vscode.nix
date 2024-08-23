@@ -13,6 +13,7 @@
       package = pkgs.vscode-fhs;
       enableUpdateCheck = false;
       enableExtensionUpdateCheck = false;
+      mutableExtensionsDir = false;
       extensions = with pkgs.vscode-extensions; [
         jdinhlife.gruvbox
         jnoortheen.nix-ide
@@ -29,10 +30,8 @@
         mathiasfrohlich.kotlin
         ms-python.python
         ms-vscode.cpptools
-        ms-dotnettools.csdevkit
         ms-dotnettools.csharp
         ms-dotnettools.vscodeintellicode-csharp
-        ms-dotnettools.vscode-dotnet-runtime
         yzhang.markdown-all-in-one
         esbenp.prettier-vscode
         christian-kohler.path-intellisense
@@ -49,6 +48,7 @@
         "window.titleBarStyle" = "custom";
         "redhat.telemetry.enabled" = false;
         "extensions.autoUpdate" = false;
+        "dotnet.server.useOmnisharp" = true;
       };
     };
   };
