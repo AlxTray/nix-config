@@ -31,6 +31,8 @@
         ms-python.python
         ms-vscode.cpptools
         ms-dotnettools.csharp
+        ms-dotnettools.csdevkit
+        ms-dotnettools.vscode-dotnet-runtime
         ms-dotnettools.vscodeintellicode-csharp
         yzhang.markdown-all-in-one
         esbenp.prettier-vscode
