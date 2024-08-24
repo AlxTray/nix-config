@@ -24,7 +24,6 @@
         early_exit=true
         fill_shape=false
       '';
-      ".p10k.zsh".source = zsh/p10k.zsh;
       ".config/hypr/pyprland.toml".source = hypr/pyprland.toml;
     };
   };

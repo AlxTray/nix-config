@@ -10,12 +10,12 @@
     ./qt.nix
     ./scriptPackages.nix
     ./xdg.nix
+    ./zsh.nix
 
     ./guiPrograms
     ./hypr
     ./services
     ./terminalPrograms
-    ./zsh
   ];
 
   dconfSettingsModule.enable =
