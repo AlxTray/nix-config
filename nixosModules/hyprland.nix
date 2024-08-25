@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ inputs, pkgs, lib, config, ... }:
 
 {
   options = {
@@ -7,6 +7,9 @@
   };
 
   config = lib.mkIf config.hyprlandSystemModule.enable {
-    programs.hyprland.enable = true;
+    programs.hyprland = {
+      enable = true;
+      package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    };
   };
 }

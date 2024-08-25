@@ -9,6 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     pyprland.url = "github:hyprland-community/pyprland";
     walker.url = "github:abenz1267/walker";
     stylix.url = "github:trueNAHO/stylix/hyprland-add-hyprpaper-enable-option";
