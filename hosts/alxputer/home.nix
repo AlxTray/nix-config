@@ -8,4 +8,5 @@
 
   hypridleModule.enable = true;
   vscodeModule.enable = true;
+  jetbrainsModule.enable = true;
 }

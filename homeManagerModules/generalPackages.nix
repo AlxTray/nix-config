@@ -25,7 +25,6 @@
       yt-dlp
       ani-cli
       modrinth-app
-      jetbrains-toolbox
     ];
   };
 }
