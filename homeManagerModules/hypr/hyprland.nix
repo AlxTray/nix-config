@@ -42,10 +42,10 @@ in
                       env = MOZ_ENABLE_WAYLAND,1
                       
                       exec-once = "${swwwStartScript}/bin/swwwStartScript"
+                      exec-once = waybar
+                      exec-once = nm-applet
                       exec-once = walker -n
                       exec-once = pypr
-                      exec-once = waybar
-                      exec-once = nm-applet --indicator
 
                       monitor = DP-1, 2560x1440@165, 0x0, 1
                       monitor = HDMI-A-1, 1920x1080@75, 2560x360, 1
