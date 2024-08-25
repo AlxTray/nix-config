@@ -8,8 +8,8 @@
 
   config = lib.mkIf config.jetbrainsModule.enable {
     home.packages = with pkgs; [
-      jetbrains.idea-community-bin
-      jetbrains.pycharm-community-bin
+      jetbrains.idea-community
+      jetbrains.pycharm-community
       jetbrains.rust-rover
     ];
   };
