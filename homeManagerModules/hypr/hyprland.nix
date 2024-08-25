@@ -7,6 +7,10 @@ let
   '';
 in
 {
+  imports = [
+    inputs.hyprland.homeManagerModules.default
+  ];
+
   options = {
     hyprlandModule.enable =
       lib.mkEnableOption "enables hyprlandModule";
