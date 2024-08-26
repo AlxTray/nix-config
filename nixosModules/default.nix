@@ -4,9 +4,10 @@
   imports = [
     ./bluetooth.nix
     ./extraFonts.nix
-    ./locale.nix
     ./generalPackages.nix
     ./hyprland.nix
+    ./jetbrains.nix
+    ./locale.nix
     ./networking.nix
     ./portals.nix
     ./stylix.nix

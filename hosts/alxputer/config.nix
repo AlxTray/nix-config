@@ -12,6 +12,7 @@
   thunarModule.enable = true;
   libvirtModule.enable = true;
   dockerModule.enable = true;
+  jetbrainsModule.enable = true;
 
   system.stateVersion = "23.11";
 }

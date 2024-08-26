@@ -4,7 +4,6 @@
   imports = [
     ./firefox.nix
     ./imv.nix
-    ./jetbrains.nix
     ./kitty.nix
     ./mpv.nix
     ./vscode.nix
