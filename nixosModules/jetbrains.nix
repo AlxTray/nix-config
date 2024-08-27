@@ -84,7 +84,6 @@
         libxcrypt-legacy
         libxkbcommon
         libxml2
-        libsecret
         mesa
         nspr
         nss
