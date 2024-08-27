@@ -70,6 +70,7 @@ in
                       windowrulev2 = minsize 1 1, title:^()$,class:^(steam)$
                       windowrulev2 = opacity 0.9 0.7, class:^(thunar)$
             	        windowrulev2 = opacity 0.9 0.5, class:^(kitty)$
+                      windowrulev2 = norounding, title:^(win)(.*)$,class:^(jetbrains)(.*)$
             
                       misc {
                         initial_workspace_tracking = 0
