@@ -7,5 +7,4 @@
   programs.home-manager.enable = true;
 
   hypridleModule.enable = true;
-  vscodeModule.enable = true;
 }

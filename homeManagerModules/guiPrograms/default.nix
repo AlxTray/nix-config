@@ -6,7 +6,6 @@
     ./imv.nix
     ./kitty.nix
     ./mpv.nix
-    ./vscode.nix
     ./walker.nix
     ./waybar.nix
     ./wlogout.nix
