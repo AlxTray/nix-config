@@ -11,6 +11,7 @@
     ./networking.nix
     ./portals.nix
     ./stylix.nix
+    ./variables.nix
 
     ./nix
     ./programs
@@ -36,5 +37,7 @@
   portalsModule.enable =
     lib.mkDefault true;
   stylixModule.enable =
+    lib.mkDefault true;
+  variablesModule.enable =
     lib.mkDefault true;
 }
