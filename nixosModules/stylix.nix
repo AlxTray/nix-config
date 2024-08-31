@@ -38,8 +38,8 @@
       cursor.size = 24;
       fonts = {
         monospace = {
-          package = pkgs.fira-code;
-          name = "FiraCode";
+          package = pkgs.jetbrains-mono;
+          name = "JetBrains Mono";
         };
         sansSerif = {
           package = pkgs.inter;
