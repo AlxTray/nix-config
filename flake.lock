@@ -7,11 +7,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1725100487,
-        "narHash": "sha256-AFNsoo1N/7T+rOu0GNOvtz+WQPboae4Y56JsV/1ay/I=",
+        "lastModified": 1725127321,
+        "narHash": "sha256-ZEfHBtHf4pYCyt5t7ywpU0TIvSh21sYsSKhSJSHWtB8=",
         "owner": "AlxTray",
         "repo": "alxvim",
-        "rev": "5d6cb0753e38dbf2ac6ac5842f1328fd00b8c65f",
+        "rev": "53a6fec949a5d1396d58d8baceb648a4efaa34e6",
         "type": "github"
       },
       "original": {
@@ -559,11 +559,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1725094862,
-        "narHash": "sha256-l47r0PEA4/8UKzyVTeel7OEM/UT25YZ4xA+Pue0TR4g=",
+        "lastModified": 1725121984,
+        "narHash": "sha256-yllftNuh1ENJyRmgihUyVsVwot4a7LVfE1Q6UR+gNoE=",
         "ref": "refs/heads/main",
-        "rev": "76b82fdde7d3f38cb70db0bec3318a7fb6c27a0c",
-        "revCount": 5166,
+        "rev": "cf6a1716ae719f9c59b1d175ca84a79015fab8e1",
+        "revCount": 5169,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
