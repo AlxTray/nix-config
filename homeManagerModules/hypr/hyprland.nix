@@ -5,6 +5,10 @@ let
     swww-daemon &
     wallpaperRandomiser &
   '';
+  walkerStartScript = pkgs.writeShellScriptBin "walkerStartScript" ''
+    walker --gapplication-service &
+    walker &
+  '';
 in
 {
   imports = [
@@ -42,9 +46,9 @@ in
                       env = MOZ_ENABLE_WAYLAND,1
                       
                       exec-once = "${swwwStartScript}/bin/swwwStartScript"
+                      exec-once = "${walkerStartScript}/bin/walkerStartScript"
                       exec-once = waybar
                       exec-once = nm-applet
-                      exec-once = walker -n
                       exec-once = pypr
 
                       monitor = DP-1, 2560x1440@165, 0x0, 1
