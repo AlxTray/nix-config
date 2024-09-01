@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./firefox.nix
     ./imv.nix
     ./kitty.nix
     ./mpv.nix
@@ -11,8 +10,6 @@
     ./wlogout.nix
   ];
 
-  firefoxModule.enable =
-    lib.mkDefault true;
   imvModule.enable =
     lib.mkDefault true;
   kittyModule.enable =
