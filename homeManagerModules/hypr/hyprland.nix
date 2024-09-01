@@ -7,6 +7,7 @@ let
   '';
   walkerStartScript = pkgs.writeShellScriptBin "walkerStartScript" ''
     walker --gapplication-service &
+    sleep 0.5
     walker &
   '';
 in
