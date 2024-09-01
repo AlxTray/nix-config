@@ -7,8 +7,6 @@
     ./hyprlock.nix
   ];
 
-  hyprlandModule.enable =
-    lib.mkDefault true;
-  hyprlockModule.enable =
+  hyprlandHomeModule.enable =
     lib.mkDefault true;
 }

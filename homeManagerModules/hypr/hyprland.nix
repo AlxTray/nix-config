@@ -17,11 +17,11 @@ in
   ];
 
   options = {
-    hyprlandModule.enable =
-      lib.mkEnableOption "enables hyprlandModule";
+    hyprlandHomeModule.enable =
+      lib.mkEnableOption "enables hyprlandHomeModule";
   };
 
-  config = lib.mkIf config.hyprlandModule.enable {
+  config = lib.mkIf config.hyprlandHomeModule.enable {
     stylix.targets.hyprpaper.enable = false;
     stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {

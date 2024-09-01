@@ -1,13 +1,9 @@
 { lib, config, ... }:
 
 {
-  options = {
-    hypridleModule.enable =
-      lib.mkEnableOption "enables hypridleModule";
-  };
-
-  config = lib.mkIf config.Module.enable {
+  config = lib.mkIf config.hyprlandHomeModule.enable {
     services.hypridle = {
+      enable = true;
       settings = {
         general = {
           after_sleep_cmd = "hyprctl dispatch dpms on";
