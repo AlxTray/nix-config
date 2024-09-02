@@ -14,6 +14,8 @@
     lib.mkDefault true;
   kittyModule.enable =
     lib.mkDefault true;
+  mpvModule.enable =
+    lib.mkDefault true;
   walkerModule.enable =
     lib.mkDefault true;
   waybarModule.enable =
