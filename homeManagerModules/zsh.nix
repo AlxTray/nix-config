@@ -2,21 +2,18 @@
 
 {
   options = {
-    zshModule.enable =
-      lib.mkEnableOption "enables zshModule";
+    zshHomeModule.enable =
+      lib.mkEnableOption "enables zshHomeModule";
   };
 
-  config = lib.mkIf config.zshModule.enable {
+  config = lib.mkIf config.zshHomeModule.enable {
     programs.starship = {
       enable = true;
       enableZshIntegration = true;
     };
     programs.zsh = {
       enable = true;
-      enableCompletion = true;
       autocd = true;
-      autosuggestion.enable = true;
-      syntaxHighlighting.enable = true;
       plugins = [
         {
           name = "nix-shell";

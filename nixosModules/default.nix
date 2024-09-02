@@ -12,6 +12,7 @@
     ./portals.nix
     ./stylix.nix
     ./variables.nix
+    ./zsh.nix
 
     ./nix
     ./programs
@@ -39,5 +40,7 @@
   stylixModule.enable =
     lib.mkDefault true;
   variablesModule.enable =
+    lib.mkDefault true;
+  zshSystemModule.enable =
     lib.mkDefault true;
 }

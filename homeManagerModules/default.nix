@@ -34,6 +34,6 @@
     lib.mkDefault true;
   xdgModule.enable =
     lib.mkDefault true;
-  zshModule.enable =
+  zshHomeModule.enable =
     lib.mkDefault true;
 }
