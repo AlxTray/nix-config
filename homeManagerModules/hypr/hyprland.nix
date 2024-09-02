@@ -78,8 +78,12 @@ in {
              windowrulev2 = opacity 0.9 0.5, class:^(kitty)$
 
              misc {
+              disable_autoreload = true;
+
               initial_workspace_tracking = 0
               mouse_move_enables_dpms = true
+
+              vrr = 1
 
               force_default_wallpaper = 0
               disable_hyprland_logo = true
@@ -104,13 +108,22 @@ in {
 
              decoration {
                rounding = 10
+               
                drop_shadow = true
-               shadow_range = 4
-               shadow_render_power = 3
+               shadow_ignore_window = true
+               shadow_offset = 0, 15
+               shadow_range = 40
+               shadow_scale = 0.97
+               col.shadow = rgba(00000055)
+
                blur {
                  enabled = true
-                 size = 5
+
                  passes = 3
+                 size = 7
+
+                 popups = true
+                 popups_ignorealpha = 0.2
                }
              }
 
