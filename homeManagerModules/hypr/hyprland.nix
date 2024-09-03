@@ -63,6 +63,9 @@ in {
                gaps_in = 6
                gaps_out = 20
                border_size = 3
+
+               col.active_border = rgb(293233)
+
                layout = master
              }
 
