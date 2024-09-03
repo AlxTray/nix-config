@@ -18,12 +18,12 @@
         global = {
           font = "Inter 10";
           follow = "mouse";
-          origin = "top-center";
-          offset = "0x15";
+          origin = "top-right";
+          offset = "10x10";
           icon_corner_radius = 10;
           corner_radius = 10;
 
-          background = "#${config.stylix.base16Scheme.base00}";
+          background = "#${config.stylix.base16Scheme.base00}EB";
           foreground = "#${config.stylix.base16Scheme.base07}";
           frame_color = "#131617";       
         };
