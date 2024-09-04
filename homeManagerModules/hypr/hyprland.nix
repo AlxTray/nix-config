@@ -25,6 +25,7 @@ in {
   };
 
   config = lib.mkIf config.hyprlandHomeModule.enable {
+    stylix.targets.hyprland.enable = false;
     stylix.targets.hyprpaper.enable = false;
     stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
@@ -63,10 +64,23 @@ in {
                gaps_in = 6
                gaps_out = 20
                border_size = 3
-
-               col.active_border = rgb(293233)
+               
+               col.active_border = rgb(${config.stylix.base16Scheme.base02})
+               col.inactive_border = rgb(131617)
 
                layout = master
+             }
+
+             group {
+               groupbar {
+                 col.active = rgb(${config.stylix.base16Scheme.base0D})
+                 col.inactive = rgb(131617)
+                 text_color = rgb(${config.stylix.base16Scheme.base05})
+               }
+
+               col.border_active = rgb(${config.stylix.base16Scheme.base02})
+               col.border_inactive = rgb(131617)
+               col.border_locked_active = rgb(${config.stylix.base16Scheme.base0C}) 
              }
 
              input {
@@ -82,6 +96,8 @@ in {
 
              misc {
               disable_autoreload = true;
+
+              background_color = rgb(${config.stylix.base16Scheme.base00})
 
               initial_workspace_tracking = 0
               mouse_move_enables_dpms = true
