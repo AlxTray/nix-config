@@ -100,7 +100,6 @@ in {
               background_color = rgb(${config.stylix.base16Scheme.base00})
 
               initial_workspace_tracking = 0
-              mouse_move_enables_dpms = true
 
               vrr = 1
 
