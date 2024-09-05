@@ -8,16 +8,13 @@ let
     sha256 = "sha256-QpvBnnYYRZm9Xj6fMlN1kooYzIkn8R5KV7dL+lHzoLE=";
   };
 
-  animeWallpapers =
-    lib.filesystem.listFilesRecursive "${wallpapersRepo}/wallpapers/anime";
   pixelWallpapers =
     lib.filesystem.listFilesRecursive "${wallpapersRepo}/wallpapers/pixelart";
 
-  allWallpapers = animeWallpapers ++ pixelWallpapers;
   wallpaperBashArray = ''
     ("${
       lib.strings.concatStrings (lib.strings.intersperse ''" "''
-        (map (wallpaper: "${wallpaper}") allWallpapers))
+        (map (wallpaper: "${wallpaper}") pixelWallpapers))
     }")'';
 in
 pkgs.writeShellScriptBin "wallpaperRandomiser" ''
