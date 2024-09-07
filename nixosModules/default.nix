@@ -5,8 +5,6 @@
     ./bluetooth.nix
     ./extraFonts.nix
     ./generalPackages.nix
-    ./hyprland.nix
-    ./jetbrains.nix
     ./locale.nix
     ./networking.nix
     ./portals.nix
@@ -30,8 +28,6 @@
   localeModule.enable =
     lib.mkDefault true;
   systemPackagesModule.enable =
-    lib.mkDefault true;
-  hyprlandSystemModule.enable =
     lib.mkDefault true;
   networkingModule.enable =
     lib.mkDefault true;

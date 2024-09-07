@@ -9,7 +9,6 @@
   printingModule.enable = true;
   javaModule.enable = true;
   steamModule.enable = true;
-  thunarModule.enable = true;
   libvirtModule.enable = true;
   jetbrainsModule.enable = true;
 
