@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./brave.nix
     ./dconf.nix
     ./gnupg.nix
     ./hyprland.nix
@@ -11,9 +10,7 @@
     ./steam.nix
     ./thunar.nix
   ];
-    
-  braveModule.enable =
-    lib.mkDefault true;
+
   dconfModule.enable =
     lib.mkDefault true;
   gnupgModule.enable =

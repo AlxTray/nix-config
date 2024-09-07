@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./brave.nix
     ./imv.nix
     ./kitty.nix
     ./mpv.nix
@@ -10,6 +11,8 @@
     ./wlogout.nix
   ];
   
+  braveModule.enable =
+    lib.mkDefault true;
   imvModule.enable =
     lib.mkDefault true;
   kittyModule.enable =

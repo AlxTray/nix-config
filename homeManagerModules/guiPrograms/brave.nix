@@ -7,13 +7,10 @@
   };
 
   config = lib.mkIf config.braveModule.enable {
-    environment.systemPackages = [ pkgs.brave ];
     programs.chromium = {
       enable = true;
-      extraOpts = {
-        "SpellcheckEnabled" = true;
-        "SpellcheckLanguage" = [ "en-GB" ];
-      };
+      package = pkgs.brave;
+      dictionaries = [ pkgs.hunspellDictsChromium.en-gb ];
     };
   };
 }
