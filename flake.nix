@@ -16,7 +16,6 @@
     yazi.url = "github:sxyazi/yazi";
     swww.url = "github:LGFae/swww";
     alxvim.url = "github:AlxTray/alxvim";
-    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs =

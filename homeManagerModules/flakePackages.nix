@@ -11,7 +11,6 @@
       inputs.pyprland.packages.${pkgs.system}.pyprland
       inputs.swww.packages.${pkgs.system}.swww
       inputs.alxvim.packages.${pkgs.system}.default
-      inputs.zen-browser.packages.${pkgs.system}.specific
     ];
   };
 }
