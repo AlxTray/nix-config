@@ -9,8 +9,7 @@
   config = lib.mkIf config.udiskieModule.enable {
     services.udiskie = {
       enable = true;
-      automount = true;
-      notify = true;
+      tray = "never";
     };
   };
 }

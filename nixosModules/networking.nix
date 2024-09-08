@@ -7,9 +7,11 @@
   };
 
   config = lib.mkIf config.networkingModule.enable {
-    networking.networkmanager.enable = true;
-    networking.hostName = host;
-    networking.timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
+    networking = {
+      networkmanager.enable = true;
+      hostName = host;
+      timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
+    };
     users.users."${username}".extraGroups = [ "networkmanager" ];
   };
 }

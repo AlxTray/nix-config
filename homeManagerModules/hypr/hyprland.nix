@@ -51,8 +51,6 @@ in {
 
              exec-once = "${swwwStartScript}/bin/swwwStartScript"
              exec-once = "${walkerStartScript}/bin/walkerStartScript"
-             exec-once = waybar
-             exec-once = nm-applet
              exec-once = pypr
 
              monitor = DP-1, 2560x1440@165, 0x0, 1

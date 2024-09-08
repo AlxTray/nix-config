@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, config, ... }:
+{ lib, config, ... }:
 
 {
   options = {
@@ -10,6 +10,10 @@
     stylix.targets.waybar.enable = false;
     programs.waybar = {
       enable = true;
+      systemd = {
+        enable = true;
+        target = "hyprland-session.target";
+      };
       settings = [
         {
           margin-top = 0;
