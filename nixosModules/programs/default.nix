@@ -7,6 +7,7 @@
     ./hyprland.nix
     ./java.nix
     ./jetbrains.nix
+    ./nvim.nix
     ./steam.nix
     ./thunar.nix
   ];
@@ -16,6 +17,8 @@
   gnupgModule.enable =
     lib.mkDefault true;
   hyprlandSystemModule.enable =
+    lib.mkDefault true;
+  nvimModule.enable =
     lib.mkDefault true;
   thunarModule.enable =
     lib.mkDefault true;

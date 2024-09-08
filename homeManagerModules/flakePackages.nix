@@ -10,7 +10,6 @@
     home.packages = [
       inputs.pyprland.packages.${pkgs.system}.pyprland
       inputs.swww.packages.${pkgs.system}.swww
-      inputs.alxvim.packages.${pkgs.system}.default
     ];
   };
 }

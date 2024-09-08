@@ -15,7 +15,7 @@
     stylix.url = "github:trueNAHO/stylix/hyprland-add-hyprpaper-enable-option";
     yazi.url = "github:sxyazi/yazi";
     swww.url = "github:LGFae/swww";
-    alxvim.url = "github:AlxTray/alxvim";
+    nvim.url = "github:AlxTray/nvim-config";
   };
 
   outputs =
