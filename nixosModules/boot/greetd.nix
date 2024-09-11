@@ -1,4 +1,4 @@
-{ username, lib, config, ... }:
+{ pkgs, lib, config, ... }:
 
 {
   options = {
@@ -9,12 +9,11 @@
   config = lib.mkIf config.greetdModule.enable {
     services.greetd = {
       enable = true;
-      settings = rec {
-        initial_session = {
-          user = username;
-          command = "Hyprland";
+      settings = {
+        default_session = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --asterisks";
+          user = "greeter";
         };
-        default_session = initial_session;
       };
     };
   };
