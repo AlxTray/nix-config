@@ -3,11 +3,11 @@
 {
   imports = [
     ./efi.nix
-    ./systemdBoot.nix
+    ./grub.nix
   ];
 
   efiModule.enable =
     lib.mkDefault true;
-  systemdBootModule.enable =
+  grubModule.enable =
     lib.mkDefault true;
 }
