@@ -53,16 +53,18 @@ fi
 echo "-----"
 
 echo "Cloning & Entering Repository"
-git clone https://gitlab.com/zaney/zaneyos.git
-cd zaneyos || exit
-mkdir hosts/"$hostName"
-cp hosts/default/*.nix hosts/"$hostName"
+git clone https://github.com/AlxTray/nix-config.git
+cd nix-config || exit
+if [ ! -d "hosts/$hostname" ]; then
+  mkdir hosts/"$hostName"
+  cp hosts/default/*.nix hosts/"$hostName"
+fi  
 git add .
 sed -i "/^\s*host[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$hostName\"/" ./flake.nix
 
 echo "-----"
 
-installusername=$($USER)
+installusername="$USER"
 sed -i "/^\s*username[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$installusername\"/" ./flake.nix
 
 echo "-----"
