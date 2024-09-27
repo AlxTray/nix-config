@@ -79,4 +79,4 @@ NIX_CONFIG="experimental-features = nix-command flakes"
 
 echo "-----"
 
-sudo nixos-rebuild switch --flake ~/zaneyos/#${hostName}
+sudo nixos-rebuild switch --flake ~/nix-config/#${hostName}
