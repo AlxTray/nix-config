@@ -9,7 +9,7 @@
   config = lib.mkIf config.grubModule.enable {
     boot.loader.grub = {
       enable = true;
-      efiVariables = true;
+      efiSupport = true;
       devices = [ "nodev" ];
       useOSProber = true;
     };
