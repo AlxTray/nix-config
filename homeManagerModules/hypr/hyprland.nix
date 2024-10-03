@@ -27,7 +27,6 @@ in {
   config = lib.mkIf config.hyprlandHomeModule.enable {
     stylix.targets.hyprland.enable = false;
     stylix.targets.hyprpaper.enable = false;
-    stylix.targets.hyprland.hyprpaper.enable = false;
     wayland.windowManager.hyprland = {
       enable = true;
       systemd.variables = ["--all"];
