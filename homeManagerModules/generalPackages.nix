@@ -23,6 +23,7 @@
       cool-retro-term
       yt-dlp
       modrinth-app
+      element-desktop
 
       (ani-cli.override {
         mpv = mpv.override {
