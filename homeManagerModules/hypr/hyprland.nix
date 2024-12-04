@@ -52,10 +52,7 @@ in {
              exec-once = "${walkerStartScript}/bin/walkerStartScript"
              exec-once = pypr
 
-             monitor = DP-1, 2560x1440@165, 0x0, 1
-             monitor = HDMI-A-1, 1920x1080@75, 2560x360, 1
-
-             workspace = 1, monitor:DP-1, default:true
+             monitor = , preferred, auto, 1
 
              general {
                gaps_in = 6
